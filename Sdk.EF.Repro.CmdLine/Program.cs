@@ -20,7 +20,8 @@ namespace Sdk.EF.Repro.CmdLine
 
             var provider = new SqlProvider();
 
-            Console.WriteLine($"Record: {provider.GetStringRecord()}");
+            Console.WriteLine($"str Record: {provider.GetStringRecord()}");
+            Console.WriteLine($"int Record: {provider.GetIntRecord()}");
 
             Console.WriteLine("Press enter to exit...");
             Console.ReadLine();

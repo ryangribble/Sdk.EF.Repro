@@ -38,5 +38,15 @@ namespace Sdk.EF.Repro.Tests
 
             Assert.Equal("foo", result);
         }
+        
+        [Fact]
+        public void GetIntRecordReturnsOne()
+        {
+            var fixture = new SqlProvider();
+
+            var result = fixture.GetIntRecord();
+
+            Assert.Equal(1, result);
+        }
     }
 }

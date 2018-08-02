@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace Sdk.Ef.Repro.Lib
 {
@@ -6,7 +7,10 @@ namespace Sdk.Ef.Repro.Lib
     {
         public string GetStringRecord()
         {
-            return "foo";
+            using (var db = new TestDBContext())
+            {
+                return db.StringRecords.First().Value;
+            }
         }
     }
 }

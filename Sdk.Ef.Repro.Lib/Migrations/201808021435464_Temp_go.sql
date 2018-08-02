@@ -1,0 +1,1 @@
+INSERT dbo.IntRecords VALUES (1)

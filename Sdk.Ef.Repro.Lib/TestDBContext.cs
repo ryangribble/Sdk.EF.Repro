@@ -17,6 +17,7 @@ namespace Sdk.Ef.Repro.Lib
         {
         }
 
+        public DbSet<IntRecord> IntRecords { get; set; }
         public DbSet<StringRecord> StringRecords { get; set; }
     }
 }

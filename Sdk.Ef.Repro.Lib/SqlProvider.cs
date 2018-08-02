@@ -12,5 +12,13 @@ namespace Sdk.Ef.Repro.Lib
                 return db.StringRecords.First().Value;
             }
         }
+
+        public int GetIntRecord()
+        {
+            using (var db = new TestDBContext())
+            {
+                return db.IntRecords.First().Value;
+            }
+        }
     }
 }
